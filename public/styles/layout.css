@@ -25,6 +25,19 @@ body {
   flex-direction: column;
 }
 
+.container {
+  width: 90%;
+  background-color: #f4f1ec;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.new-tweet {
+  display: flex;
+}
 
 
 /*

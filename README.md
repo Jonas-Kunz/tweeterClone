@@ -12,6 +12,12 @@ This repository is the starter code for the project: Students will fork and clon
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+## Citations:
+
+1. [hiding the label](https://stackoverflow.com/a/75419659)
+
+
+
 ## Dependencies
 
 - Express

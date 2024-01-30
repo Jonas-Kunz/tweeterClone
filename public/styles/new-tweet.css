@@ -1,0 +1,73 @@
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.new-tweet h2 {
+  align-self: center;
+  margin:0%;
+  margin-bottom: 5px;
+}
+
+.new-tweet form {
+  align-self: center;
+ 
+}
+
+.text-box {
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#tweet-text {
+  display: flex;
+  background-color: #f4f1ec;
+  border-style: hidden hidden solid;
+  border-width: 5px;
+  border-color: #545149;
+  height: 40px;
+  width: 885px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+#tweet-text::placeholder {
+  font-weight: 600;
+}
+
+/* // hides label so you dont see it but is still available for screen readers *1 */
+label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', sans-serif;
+}
+
+.button-box button {
+  color: #FFFFFF;
+  background-color: #4056A1; 
+  border-color: #4056A1;
+}
+
+.button-box button:hover {
+  border: 3px solid  #0d205c;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.2); /* Creates an inset shadow */
+  transform: scale(0.98);
+}
+
