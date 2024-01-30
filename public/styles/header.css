@@ -1,0 +1,13 @@
+
+header {
+  background-color: blueviolet;
+  color: #ffff;
+  height: 520px;
+  display: flex;
+  margin-top: 120px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+ 
+}

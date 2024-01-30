@@ -5,7 +5,7 @@ const Chance      = require("chance"),
 
 const md5 = require('md5');
 
-
+/// bruh i guess exports being green was a bit of a hint that they were classes all along but it is cool to see!
 module.exports = {
   generateRandomUser: () => {
     const gender    = chance.gender();

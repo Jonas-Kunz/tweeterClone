@@ -4,6 +4,8 @@
 const simulateDelay = require("./util/simulate-delay");
 
 // Defines helper functions for saving and getting tweets, using the database `db`
+// this is also cool exporting the return of the function? or exporting the function and immediatley calling 
+// so that both the functions inside it have acces to db. this would have been useful for tiny app
 module.exports = function makeDataHelpers(db) {
   return {
 
@@ -25,3 +27,5 @@ module.exports = function makeDataHelpers(db) {
 
   };
 }
+
+
