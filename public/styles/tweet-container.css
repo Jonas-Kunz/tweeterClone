@@ -50,6 +50,9 @@ article header div {
   align-items: center;
   gap: 10px;
 }
+article header div .fa-solid {
+  color:  #545149;
+}
 
 .tag {
   color: #c7cbe3;
