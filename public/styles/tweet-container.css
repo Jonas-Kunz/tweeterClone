@@ -25,6 +25,7 @@ article:hover {
   font-weight: 600;
   border-style: hidden hidden solid;
   margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 article header {
