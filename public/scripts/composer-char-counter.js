@@ -4,7 +4,7 @@ $(document).ready(function () {
   //  event handler for the textarea
   $("#tweet-text").on("input", function (e) {
     // update the character counter
-
+    console.log(e);
     const remainingChars = 140 - $(this).val().length;
     // $('.counter').text(remainingChars);
     const formFind = $(this).closest("form");

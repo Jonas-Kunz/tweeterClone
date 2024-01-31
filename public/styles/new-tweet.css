@@ -31,7 +31,9 @@
   border-style: hidden hidden solid;
   border-width: 5px;
   border-color: #545149;
-  height: 40px;
+  height: auto;
+  overflow: auto;
+  resize: none;
   width: 885px;
   margin-bottom: 5px;
   box-sizing: border-box;
