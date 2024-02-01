@@ -5,10 +5,23 @@
   justify-content: center;
 }
 
-.new-tweet h2 {
+.error-box {
   align-self: center;
-  margin:0%;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 885px;
+  height: 50px;
+  border: solid;
+  font-weight: 600;
+  border-color: #ff0000;
+  color: #ff0000;
+  display: none;
+  justify-content: center;
+}
+
+.error-box p {
+  margin: 0%;
+  align-self: center;
 }
 
 .new-tweet form {
@@ -36,6 +49,7 @@
   resize: none;
   width: 885px;
   margin-bottom: 5px;
+  margin-top: 100px;
   box-sizing: border-box;
 }
 
@@ -71,5 +85,9 @@ label {
   border: 3px solid  #0d205c;
   box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.2); /* Creates an inset shadow */
   transform: scale(0.98);
+}
+
+.new-tweet img {
+  display: none;
 }
 
