@@ -1,9 +1,10 @@
-
+/* common rules */
 .tweet-container {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   margin-top: 50px;
+  width: 90%;
 }
 
 article {
@@ -11,8 +12,8 @@ article {
   flex-direction: column;
   border-style: solid;
   border-width: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin: 1%;
 }
 
@@ -81,5 +82,216 @@ footer div .fa-solid:hover {
   color: #ca9824;
 }
 
+@media only screen and (max-width: 420px) {
+  /* Write smartphone only styles here */
+  article header {
+    background-color: #f4f1ec;
+    color:  #545149;
+    background-image: none;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    position: relative;
+    
+  }
+
+  article header h4 {
+    display: flex;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    align-self: start;
+  }
+
+  article header div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .tag {
+    color: #c7cbe3;
+    position: absolute;
+    right: 0px;
+  }
+
+  article header .profile-pic {
+    height: 50px;
+    width: 50px;
+  }
+
+}
 
 
+/* article header {
+  background-color: #f4f1ec;
+  color:  #545149;
+  background-image: none;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+  position: relative;
+  
+}
+
+article header h4 {
+  display: flex;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  align-self: start;
+}
+
+article header div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tag {
+  color: #c7cbe3;
+  position: absolute;
+  right: 0px;
+}
+
+article header .profile-pic {
+  height: 50px;
+  width: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+footer div .fa-solid {
+  color: #47559e;
+}
+
+footer div .fa-solid:hover {
+  color: #ca9824;
+} */
+
+/* @media only screen and (min-width: 450px) {
+
+  article header {
+    background-color: #f4f1ec;
+    color:  #545149;
+    background-image: none;
+    height:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+  }
+  
+  article header h3 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  
+  article header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  article header div .fa-solid {
+    color:  #545149;
+  }
+  
+  .tag {
+    color: #c7cbe3;
+    position: static;
+  }
+
+} */
+
+/* 
+.tweet-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 50px;
+  width: 90%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 1%;
+}
+
+article:hover {
+  box-shadow: 10px 5px 5px #c9cadf;
+}
+
+.content {
+  display: flex;
+  font-weight: 600;
+  border-style: hidden hidden solid;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.content p {
+  display: flex;
+  margin: 2px;
+  flex-wrap: wrap;
+  word-break: break-all;
+  white-space: normal;
+}
+
+article header {
+  background-color: #f4f1ec;
+  color:  #545149;
+  background-image: none;
+  height:fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  
+}
+
+article header h3 {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+article header div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+article header div .fa-solid {
+  color:  #545149;
+}
+
+.tag {
+  color: #c7cbe3;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+footer div .fa-solid {
+  color: #47559e;
+}
+
+footer div .fa-solid:hover {
+  color: #ca9824;
+}
+ */

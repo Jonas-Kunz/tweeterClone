@@ -13,6 +13,7 @@ const renderTweets = function (tweetsArr) {
   $.each(tweetsArr, function (index, tweetObj) {
     $(".tweet-container").prepend(createTweetElement(tweetObj));
   });
+
 };
 
 const createTweetHeader = function (tweet) {
@@ -27,8 +28,8 @@ const createTweetHeader = function (tweet) {
   const $header = $("<header>");
   const $div = $("<div>");
   const $profile = $("<img>");
-  const $name = $("<h3>");
-  const $handle = $("<h3>");
+  const $name = $("<h4>");
+  const $handle = $("<h4>");
 
   $name.text(name);
 
@@ -117,8 +118,8 @@ const submitPost = function (submitMsg) {
 
 const msgValidationFail = function (msgLength) {
   if (msgLength < 1 || msgLength > 140) {
-    $("#tweet-text").css("margin-top", "10px");
-    $(".error-box").css("display", "flex");
+    // $("#tweet-text").addClass("show");
+    $(".error-box").addClass("show");
     let warningText = "";
     if (msgLength < 1) {
       warningText = "❗❗❗ Please Enter A Message ❗❗❗ ";
@@ -128,8 +129,8 @@ const msgValidationFail = function (msgLength) {
     }
     return $(".warning").text(`${warningText}`);
   } else {
-    $(".error-box").css("display", "none");
-    $("#tweet-text").css("margin-top", "100px");
+    $(".error-box").removeClass("show");
+    // $("#tweet-text").removeClass("show");
   }
 }
 
@@ -155,7 +156,7 @@ $(document).ready(function () {
     submitPost(submitMsg)
       .then((response) => {
         loadTweets([response]).then((response) => {
-          renderTweets(response);
+          renderTweets([response[response.length - 1]]);
         });
       })
       .then(() => {

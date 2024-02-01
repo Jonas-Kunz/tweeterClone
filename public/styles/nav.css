@@ -12,20 +12,23 @@ nav {
   padding-right: 1.5em;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 span {
   font-family: 'Bungee', sans-serif;
 }
 
-.nav-item {
-  padding-top: 45px;
+h3 {
+  margin: 0;
 }
+
 
 .nav-sidetext {
  font-family: 'source sans 3', sans-serif; 
  height: 50px;
  margin-bottom: 0%;
+ padding-top: 16px;
  display: flex;
  flex-direction: column;
  align-items: center;
