@@ -115,6 +115,24 @@ const submitPost = function (submitMsg) {
   return response;
 };
 
+const msgValidationFail = function (msgLength) {
+  if (msgLength < 1 || msgLength > 140) {
+    $("#tweet-text").css("margin-top", "10px");
+    $(".error-box").css("display", "flex");
+    let warningText = "";
+    if (msgLength < 1) {
+      warningText = "❗❗❗ Please Enter A Message ❗❗❗ ";
+    } else if (msgLength > 140) {
+      warningText =
+        "❗❗❗ Please Enter A Message Shorter Than 140 Characters ❗❗❗ ";
+    }
+    return $(".warning").text(`${warningText}`);
+  } else {
+    $(".error-box").css("display", "none");
+    $("#tweet-text").css("margin-top", "100px");
+  }
+}
+
 
 $(document).ready(function () {
   loadTweets()
@@ -130,20 +148,8 @@ $(document).ready(function () {
     const submitMsg = $(this).serialize();
     const msgLength = $("#tweet-text").val().length;
 
-    if (msgLength < 1 || msgLength > 140) {
-      $("#tweet-text").css("margin-top", "10px");
-      $(".error-box").css("display", "flex");
-      let warningText = "";
-      if (msgLength < 1) {
-        warningText = "❗❗❗ Please Enter A Message ❗❗❗ ";
-      } else if (msgLength > 140) {
-        warningText =
-          "❗❗❗ Please Enter A Message Shorter Than 140 Characters ❗❗❗ ";
-      }
-      return $(".warning").text(`${warningText}`);
-    } else {
-      $(".error-box").css("display", "none");
-      $("#tweet-text").css("margin-top", "100px");
+    if(msgValidationFail(msgLength)) {
+      return;
     }
 
     submitPost(submitMsg)

@@ -28,6 +28,14 @@ article:hover {
   margin-top: 20px;
 }
 
+.content p {
+  display: flex;
+  margin: 2px;
+  flex-wrap: wrap;
+  word-break: break-all;
+  white-space: normal;
+}
+
 article header {
   background-color: #f4f1ec;
   color:  #545149;
