@@ -11,11 +11,20 @@ header {
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  img {
+    height: 100px;
+    width: 100px;
+    /* margin-left: 25px; */
+  }
+}
 
-img {
-  height: 100px;
-  width: 100px;
-  /* margin-left: 25px; */
+
+@media (min-width: 768px) {
+  header {
+    height: 520px;
+    flex-direction: column;
+  }
 }
 
 

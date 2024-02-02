@@ -96,7 +96,7 @@ footer div .fa-solid:hover {
   color: #ca9824;
 }
 
-@media only screen and (min-width: 520px) {
+@media (min-width: 520px) {
  
   article header {
     flex-direction: row;
