@@ -38,13 +38,24 @@ body {
   display: flex;
 }
 
-
-
 @media (min-width: 768px) {
   body {
     font-size: 24px;
   }
 
+}
+
+@media (min-width: 1025px) {
+  body {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .container {
+    width: 66.66666%;
+    width: calc(200%/ 3)
+  }
 }
 
 /*

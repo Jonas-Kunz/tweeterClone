@@ -15,7 +15,7 @@ header {
   img {
     height: 100px;
     width: 100px;
-    /* margin-left: 25px; */
+   
   }
 }
 
@@ -24,6 +24,15 @@ header {
   header {
     height: 520px;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    margin-top: 260px;
+    width: 33.333%;
+    width: calc(100%/ 3);
+    margin-left: 30px;
   }
 }
 

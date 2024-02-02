@@ -101,4 +101,10 @@ label {
   }
 }
 
+@media (min-width: 1025px) {
+  .new-tweet {
+    margin-top: 170px;
+  }
+}
+
 

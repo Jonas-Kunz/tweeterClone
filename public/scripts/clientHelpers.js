@@ -1,8 +1,8 @@
-
+// empties tweet container
+// loops through the tweetsArr from the mock database
+// then prepends the tweets to the tweet-container
 const renderTweets = function (tweetsArr) {
-  // loops through tweets
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
+
   const $tweetContainer = $(".tweet-container");
 
   $tweetContainer.empty();
@@ -12,44 +12,40 @@ const renderTweets = function (tweetsArr) {
   });
 
 };
-
+// helper to creat the header of the tweet article
 const createTweetHeader = function (tweet) {
   const { name, handle, avatars } = tweet.user;
-  // <header>
-  //   <div>
-  //     <img class="profile-pic" src="${avatars}" alt="Profile-pic" />
-  //     <h3>${name}</h3>
-  //   </div>
-  //   <h3 class="tag">${handle}</h3>
-  // </header>
+  //takes in data from response from server from renderTweets
+  // definitions for each html element
+
   const $header = $("<header>");
   const $div = $("<div>");
   const $profile = $("<img>");
   const $name = $("<h4>");
   const $handle = $("<h4>");
 
+  // using .text() to escape spooky scripts
   $name.text(name);
-
   $handle.text(handle);
-  $handle.addClass("tag");
 
+  // adding needed classes and atrributes
+  $handle.addClass("tag");
   $profile.addClass("profile-pic");
   $profile.attr("src", avatars);
   $profile.attr("alt", "profile picture");
 
+  // appending created elements to header
   $div.append($profile);
   $div.append($name);
-
   $header.append($div);
   $header.append($handle);
 
   return $header;
 };
 
+// this function works the same as above
 const createTweetContent = function (tweet) {
-  // <div class="content">
-  //   <p>"${tweet.content.text}"</p>
-  // </div>
+
   const $div = $("<div>");
   const $contentP = $("<p>");
 
@@ -62,6 +58,7 @@ const createTweetContent = function (tweet) {
   return $div;
 };
 
+// this function works the same as above
 const createTweetFooter = function (tweet) {
   const time = timeago.format(tweet.created_at);
 
@@ -88,9 +85,8 @@ const createTweetFooter = function (tweet) {
   return $footer;
 };
 
+// calls the other create helper functions and stitches em together
 const createTweetElement = function (tweet) {
-  // const { name, avatars, handle } = tweet.user;
-  // const time = timeago.format(tweet.created_at);
   const $tweet = $("<article>");
   const $header = createTweetHeader(tweet);
   const $contentDiv = createTweetContent(tweet);
@@ -103,18 +99,21 @@ const createTweetElement = function (tweet) {
   return $tweet;
 };
 
+// starts loading tweets by making a get request to /tweets
 const loadTweets = function () {
   return $.get("/tweets");
 };
 
+// submits tweets by making a post to .tweets
 const submitPost = function (submitMsg) {
-  const response = $.post("/tweets", submitMsg);
-  return response;
+  return $.post("/tweets", submitMsg);
 };
 
+// if message is less than 1 or greater than 140 returns the appropriate warning text
 const msgValidationFail = function (msgLength) {
+
   if (msgLength < 1 || msgLength > 140) {
-    // $("#tweet-text").addClass("show");
+    // adds class to .error-box so i can do a transition
     $(".error-box").addClass("show");
     let warningText = "";
     if (msgLength < 1) {
@@ -125,7 +124,7 @@ const msgValidationFail = function (msgLength) {
     }
     return $(".warning").text(`${warningText}`);
   } else {
+    // removes class.
     $(".error-box").removeClass("show");
-    // $("#tweet-text").removeClass("show");
   }
 }
