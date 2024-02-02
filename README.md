@@ -17,7 +17,11 @@ This repository is the starter code for the project: Students will fork and clon
 I made this project for Lighthouse Labs. I had a fun time learning about how all we've learned so far comes together in a SPA. I particularly enjoyed the aha moments I had about function modularization and seeing the way the server starter code was built was interesting after TinyApp
 
 ## ScreenShots
-
+!["ScreenShot of Header"](https://github.com/Jonas-Kunz/tweeterClone/blob/master/docs/Header.png?raw=true)
+!["ScreenShot of Nav Bar"](https://github.com/Jonas-Kunz/tweeterClone/blob/master/docs/navBar.png?raw=true)
+!["ScreenShot of Tweets"](https://github.com/Jonas-Kunz/tweeterClone/blob/master/docs/tweetContainer.png?raw=true)
+!["ScreenShot of Tweet Submission Form"](https://github.com/Jonas-Kunz/tweeterClone/blob/master/docs/tweetSubmissionForm.png?raw=true)
+!["ScreenShot of Mobile Layout"](https://github.com/Jonas-Kunz/tweeterClone/blob/master/docs/mobileLayout.png?raw=true)
 
 ## Credit
 
