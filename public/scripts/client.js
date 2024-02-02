@@ -29,13 +29,14 @@ $(document).ready(function () {
     }
     // here in submit message the text gets sent to the server
     // a random user and id is genereated by our starter code
-    submitPost(submitMsg)
-      // the response is then fed into this chain calls load tweets to get the tweetsArr
+    // the response is then fed into this chain that calls load tweets to get the tweetsArr
       // to feed into renderTweets
+    submitPost(submitMsg)
       .then((response) => {
-        loadTweets(response).then((response) => {
-          renderTweets(response);
-        });
+        loadTweets(response)
+          .then((response) => {
+            renderTweets(response);
+          });
       })
       .then(() => {
         // this here just handles reseting the form and the counter after entry
