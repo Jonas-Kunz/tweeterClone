@@ -24,7 +24,7 @@ $(document).ready(function () {
     const submitMsg = $(this).serialize();
     const msgLength = $("#tweet-text").val().length;
 
-    if(msgValidationFail(msgLength)) {
+    if (msgValidationFail(msgLength)) {
       return;
     }
     // here in submit message the text gets sent to the server

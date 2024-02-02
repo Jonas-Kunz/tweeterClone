@@ -12,9 +12,9 @@ $(document).ready(function () {
     countTarget.text(remainingChars);
 
     if (remainingChars < 0) {
-      countTarget.css("color", "red")
+      countTarget.css("color", "red");
     } else {
-      countTarget.css("color", "")
+      countTarget.css("color", "");
     }
 
   });

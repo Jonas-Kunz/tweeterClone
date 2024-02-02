@@ -79,7 +79,7 @@ label {
 
 .button-box button:hover {
   border: 3px solid  #0d205c;
-  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.2); /* Creates an inset shadow */
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.2); 
   transform: scale(0.98);
 }
 

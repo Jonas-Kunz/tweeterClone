@@ -19,7 +19,6 @@ header {
   }
 }
 
-
 @media (min-width: 768px) {
   header {
     height: 520px;
@@ -35,18 +34,3 @@ header {
     margin-left: 30px;
   }
 }
-
-
-
-/* keep header 400px visible for desktop */
-/* header {
-  background-color: #2f0042;
-  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
-  color: #ffff;
-  height: 520px;
-  margin-top: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-} */
