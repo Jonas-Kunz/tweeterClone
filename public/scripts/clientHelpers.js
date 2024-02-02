@@ -106,7 +106,8 @@ const loadTweets = function () {
 
 // submits tweets by making a post to .tweets
 const submitPost = function (submitMsg) {
-  return $.post("/tweets", submitMsg);
+  const response = $.post("/tweets", submitMsg);
+  return response;
 };
 
 // if message is less than 1 or greater than 140 returns the appropriate warning text
